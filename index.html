@@ -12,9 +12,11 @@
     </head>
     <body>
         <div id="root">
-                <ul>
+            <template>
+                <ul v-if="emailList.length == 10">
                     <li v-for="email in emailList">{{ email }}</li>
                 </ul>
+            </template>
         </div>
 
         <script src="js/script.js"></script>
